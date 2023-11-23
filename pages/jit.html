@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title> Jit-Campus </title>
+    <!----JUMJ Website-->
+
+
+    <!--font awesome cdn link-->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.13/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=poppins
+    :wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+
+    <!--custmom cs file link Starts-->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--custmom cs file link Ends-->
+</head>
+
+<body>
+    <!----navigation Starts--->
+    <nav class="container">
+        <div class="navbar-logo">
+            <div class="logo">
+                <a href="../index.html" class="nav-logo">
+                    <img src="../images/jumj.jpg" width="80px" height="80px">
+                </a>
+            </div>
+        </div>
+
+        <!------Navigation links------->
+
+        <div class="navbar-choose">
+
+            <ul id="menuItems">
+                <li class="active">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li><a href="/pages/campus.html">Campus</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li class="hover-me"><a href="/pages/Main-Health.html">Main-Health</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="#">Academic</a></li>
+                                        <li><a href="#">Qirat</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="hover-me"><a href="/pages/jit.html">Jit</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="#">Academic</a></li>
+                                        <li><a href="#">Qirat</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="hover-me"><a href="/pages/agri.html">Agri</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="#">Academic</a></li>
+                                        <li><a href="#">Qirat</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="hover-me"><a href="/pages/beco.html">Beco</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="#">Academic</a></li>
+                                        <li><a href="#">Qirat</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="/pages/irshad.html">Irs.<!--Irshad--></a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li calss="hover-me"><a href="/pages/Afaan-Oromo-qirat.html">A/Oromo</a>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="#">Sh.Shafi</a></li>
+                                        <li><a href="#">Sh.Jawar_A</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li calss="hover-me"><a href="/pages/Amahric-qirat.html">Amharic</a>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="#">Sh.M/D Arab</a></li>
+                                        <li><a href="#">Sh.Jawar_K</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li calss="hover-me"><a href="/pages/Arabic-qirat.html">Arabic</a>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="#">Sh.Al-Badr</a></li>
+                                        <li><a href="#">Sh.Usaimin</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li calss="hover-me"><a href="/pages/Somali-qirat.html">Somali</a>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="#">Sh.Al-Badr</a></li>
+                                        <li><a href="#">Sh.Usaimin</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="/pages/history.html">History</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+
+                <div class="search-box">
+                    <img src="../images/search.png">
+                    <input type="text" placeholder="search ">
+                </div>
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                    <img src="../images/profile-pic.jpg">
+                </div>
+            </ul>
+            <div class="menu">
+                <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+            <!--*********  Setting-menu ends  ********-->
+            <!--********* Study  Cookiessssssssss to solve this problem ********-->
+
+            <div class="settings-menu">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="../images/profile-pic.jpg">
+                        <div>
+                            <p>ALiyi Abdela</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="../images/feedback.png">
+                        <div>
+                            <p>Give Feedback </p>
+                            <a href="#">Help us to improve new design</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="settings-links">
+                        <img src="../images/setting.png" class="settings-icon">
+                        <a href="#">Setting & Privacy <img src="../images/arrow.png" widht="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="../images/help.png" class="settings-icon">
+                        <a href="#">Help & Support <img src="../images/arrow.png" class="settings-links-arrow"  widht="10px" ></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="../images/display.png" class="settings-icon">
+                        <a href="#">Display & Accessibility <img src="../images/arrow.png" widht="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="../images/logout.png" class="settings-icon">
+                        <a href="#">Logout<img src="../images/arrow.png" widht="10px"></a>
+                    </div>
+                </div>
+
+            </div>
+    </nav>
+    <!--*********  Navigation ends  ********-->
+
+    <!-------**********Side-bar main-campus starts************ ----->
+
+    <div class="sidebar-main-campus">
+
+        <!------------Main---------->
+
+        <div class="row">
+            <div class="image">
+                <img src="../images/kjumj.png">
+            </div>
+            <div class="content">
+                <span>Welcome to JUMJ_Kito</span>
+                <h4>All you need about Jit you get here</h4>
+                <a href="#" class="btn">Register for more</a>
+            </div>
+        </div>
+
+        <div class="define-jumj">
+            <p>Jama’aan barattoota muslimaa yunivarsitii jimmaa ,jama`aa yuunivarsitiiwwan Biyyattiin qabdu keessaa adda duree kan tahee fi barattoota kutaa biyyattii hundarraa dhufan barnoota diinii fi barnoota dabalataa idilee barattootaaf kennuun,lammii
+                amala gaarii fi amantaa isaaf amanamaa tahe oomishuu irratti argama. Hanqina Dhaabbilee islaamaa kan biyya keenyatti mul`atu hamma tokko cufuuf kan yaalaa jiruu fi akka yunivarsitii islaamaa xiqqaatti kan ilaalamuu qabuudha. Jama’aa kana
+                keessatti Qur’aana lafzii irraa kaasee hanga Qur’aana hifziitti akkasumas barnoota tawhidaa, fiqhii ,nahwii,sarfii fi kkf kana malees hadiisaan kitaaboolee xixiqqoorraa hanga sunanaatti kan jiran qopheessee kan barsiisu yammuu ta’u ,barattoonni
+                gama barnootaatiinis qabxii ol’aanaa akka galmeessaniif sagantaa adda addaa baasee kan barsiisuudha.
+            </p>
+        </div>
+        <!-----Features of JUMJ------>
+        <section id="features">
+            <h1>Features of Jit-Campus</h1>
+            <p>Working for changing human mind so changing the world(sample 'will be changed')</p>
+            <div class="fea-base">
+                <div class="fea-box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3> Facility</h3>
+                    <p>Creating center of knowledge</p>
+                </div>
+                <div class="fea-box">
+                    <i class="fas fa-file-certificate"></i>
+                    <h3>Islamic knaledges</h3>
+                    <p>Taeching basic about the Din</p>
+                </div>
+                <div class="fea-box">
+                    <i class="fas fa-award"></i>
+                    <h3>Different Skill courses</h3>
+                    <p>Creating Awareness</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!---------------Jumj DIfferent Department courses-->
+
+
+        <section id="course">
+            <h1>Department given in Main-campus </h1>
+            <p>You can get different Department courses related to Heath here</p>
+            <div class="course-box">
+
+                <div class="courses">
+                    <img src="../images/c1.jpg">
+                    <div class="details">
+                        <span>Given on Regular </span>
+                        <h6>Electrical Eng</h6>
+                        <span>34 Different Courses</span>
+                    </div>
+                </div>
+
+                <div class="courses">
+                    <img src="../images/c2.jpg">
+                    <div class="details">
+                        <span>Given on Regular </span>
+                        <h6>Computer Science </h6>
+                        <span>54 Different Courses</span>
+                    </div>
+                </div>
+
+                <div class="courses">
+                    <img src="../images/c3.png">
+                    <div class="details">
+                        <span>Given on Regular </span>
+                        <h6>Chemical Eng</h6>
+                        <span>26 Different Courses</span>
+                    </div>
+                </div>
+
+                <div class="courses">
+                    <img src="../images/c4.jpg">
+                    <div class="details">
+                        <span>Given on Regular</span>
+                        <h6>Mechanical Eng</h6>
+                        <span>42 Different Courses</span>
+                    </div>
+                </div>
+
+                <div class="courses">
+                    <img src="../images/c5.jpg">
+                    <div class="details">
+                        <span>Given on Regular </span>
+                        <h6>Civil Eng</h6>
+                        <span> 27 Different Courses</span>
+                    </div>
+                </div>
+
+                <div class="courses">
+                    <img src="../images/c6.jpg">
+                    <div class="details">
+                        <span>Given on Regular </span>
+                        <h6>Software Eng</h6>
+                        <span>41 Different Courses</span>
+                    </div>
+                </div>
+                <div class="courses">
+                    <img src="../images/c4.jpg">
+                    <div class="details">
+                        <span>Given on Regular </span>
+                        <h6>Material Eng</h6>
+                        <span>25 Different Courses</span>
+                    </div>
+                </div>
+                <div class="courses">
+                    <img src="../images/c1.jpg">
+                    <div class="details">
+                        <span>Given on Regular </span>
+                        <h6>Architectural Eng</h6>
+                        <span>47 Different Courses</span>
+                    </div>
+                </div>
+                <div class="courses">
+                    <img src="../images/c3.png">
+                    <div class="details">
+                        <span>Given on Regular </span>
+                        <h6>Biomedical Eng</h6>
+                        <span>36 Different Courses</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!--footer secton starts-->
+    <div class="footer">
+        <div class="box-container">
+
+            <div class="box-logo">
+                <a href="#" class="logo">JUMJ </a>
+                <p>JUMJ is your jema'a.<br>
+                </p>You can get about religion and accadamical information
+                <br> through this web.
+                </p>
+
+                <div class="share">
+                    <a href="#" class=" social_icon-link " target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class=" social_icon-link " target="_blank">
+                        <i class="fab fa-Twitter"></i>
+                    </a>
+
+                    <a href="#" class=" social_icon-link " target="_blank">
+                        <i class="fab fa-Instagram"></i>
+                    </a>
+                    <a href="#" class=" social_icon-link " target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <a href="#" class=" social_icon-link " target="_blank">
+                        <i class="fab fa-Telegram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>our location</h3>
+                <div class="links">
+                    <a href="#"><b>></b> Ethiopia</a>
+                    <a href="#"><b>></b> Sudan</a>
+                    <a href="#"><b>></b> Usa</a>
+                    <a href="#"><b>></b> Canada</a>
+                    <a href="#"><b>></b> Libya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>quiqe links</h3>
+                <div class="links">
+                    <a href="#">home</a>
+                    <a href="#">category</a>
+                    <a href="#">product</a>
+                    <a href="#">deal</a>
+                    <a href="#">contact</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Download apps </h3>
+                <div class="links">
+                    <a href="#">google play</a>
+                    <a href="#">window xp</a>
+                    <a href="#">app store</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h4 class="credit"><span> &copy; Created by Jumj Ict Center </span>| All right reserved !</h4>
+    </div>
+
+
+
+    <!-------End of Main------>
+
+    <!------footer secton ENDS----->
+
+    <!------Js for menu toggle----->
+    <!---******  It is not clear for me what thi js code working******** -->
+
+    <!--*********Dark-theme Ends JS***************-->
+    <script src="../script.js"></script>
+
+    <script>
+        var settingsmenu = document.querySelector(".settings-menu");
+
+        function settingsMenuToggle() {
+            settingsmenu.classList.toggle("settings-menu-height");
+        }
+
+        var darkBtn = document.getElementById("dark-btn");
+
+        darkBtn.onclick = function() {
+            darkBtn.classList.toggle("dark-btn-on");
+            document.body.classList.toggle("dark-theme");
+
+            if (localStorage.getItem("theme" == "light")) {
+                darkBtn.classList.remove("dark-btn-on");
+                document.body.classList.remove("dark-theme");
+            } else if (localStorage.getItem("theme" == "dark")) {
+                darkBtn.classList.add("dark-btn-on");
+                document.body.classList.add("dark-theme");
+            } else {
+                localStorage.setItem("theme", "light")
+            }
+        }
+    </script>
+</body>
+
+</html>
