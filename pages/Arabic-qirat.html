@@ -15,7 +15,7 @@
 
     <!--custmom cs file link-->
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../src/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <!--header section starts-->
@@ -39,7 +39,8 @@
                 <li><a href="/pages/campus.html">Campus</a>
                     <div class="sub-menu-1">
                         <ul>
-                            <li class="hover-me"><a href="/pages/Main-Health.html">Main-Health</a><i class="fa fa-angle-right"></i>
+                            <li class="hover-me"><a href="/pages/Main-Health.html">Main-Health</a><i
+                                    class="fa fa-angle-right"></i>
                                 <div class="sub-menu-2">
                                     <ul>
                                         <li><a href="#">Academic</a></li>
@@ -129,7 +130,8 @@
                 </li>
                 <li><a href="pages/history.html">History</a></li>
                 <li><a href="pages/contact.html">Contact</a></li>
-                <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                        style="width:auto;">Login</button></li>
 
                 <div class="search-box">
                     <img src="../images/search.png">
@@ -173,7 +175,8 @@
                     </div>
                     <div class="settings-links">
                         <img src="../images/help.png" class="settings-icon">
-                        <a href="#">Help & Support <img src="../images/arrow.png" class="settings-links-arrow"  widht="10px" ></a>
+                        <a href="#">Help & Support <img src="../images/arrow.png" class="settings-links-arrow"
+                                widht="10px"></a>
                     </div>
                     <div class="settings-links">
                         <img src="../images/display.png" class="settings-icon">
@@ -343,7 +346,7 @@
             <div class="box-container">
 
                 <div class="box">
-                    <a href="#" class="logo"><i class ="fas fa-shopping-basket"></i>Kjumj </a>
+                    <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Kjumj </a>
                     <p>JUMJ is your jema'a .<br>
                     </p><b>You can get about religion and accadamical information through this web.</b></p>
 
@@ -408,32 +411,33 @@
     <!------footer secton ENDS----->
 
 
-
-
     <script src="js/index.js"></script>
 
-    <!--custom js file link-->
+    <!--custom js file link  --->
 
-    <!------Js for menu toggle-->
+    <!--- Js for menu toggle  -->
 
     <script>
+
         var MenuItems = document.getElementById("MenuItems");
         MenuItems.style.maxHeight = "0px";
 
         function menutoggle() {
-            if (MenuItems.style.maxHeight = "0px";) {
+            if (MenuItems.style.maxHeight = "0px") {
                 MenuItems.style.maxHeight = "200px";
             } else {
                 MenuItems.style.maxHeight = "0px";
             }
         }
+
         var settingsmenu = document.querySelector(".settings-menu");
 
         function settingsMenuToggle() {
             settingsmenu.classList.toggle("settings-menu-height");
         }
+
         var darkBtn = document.getElementById("dark-btn");
-        darkBtn.onclick = function() {
+        darkBtn.onclick = function () {
             darkBtn.classList.toggle("dark-btn-on");
             document.body.classList.toggle("dark-theme");
             if (localStorage.getItem("theme" == "light")) {
@@ -447,6 +451,7 @@
             }
         }
     </script>
+
 </body>
 
 </html>

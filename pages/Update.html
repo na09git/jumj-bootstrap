@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Profile page</title>
+    <!----JUMJ Website-->
+
+
+    <!--font awesome cdn link-->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.13/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=poppins
+    :wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+
+    <!--custmom cs file link Starts-->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--custmom cs file link Ends-->
+</head>
+
+<body>
+    <!-------**********Update starts************ ----->
+
+
+
+    <!--custom js file link-->
+    <script src="../js/script.js"></script>
+
+    <!------Js for menu toggle-->
+    <!---******  It is not clear for me why this js code not working******** -->
+    <script>
+        /*************Menuitems Ends JS***************/
+
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight = "0px";) {
+                MenuItems.style.maxHeight = "50px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        /*************Menuitems JS***************/
+        /*************Setting-menu Starts JS***************/
+
+        var settingsmenu = document.querySelector(".settingsmenu");
+
+        function settingsMenuToggle() {
+            settingsmenu.classList.toggle("settings-menu-height");
+        }
+        /*************Setting-menu Ends JS***************/
+
+        /*************Dark-theme start JS***************/
+        var darkbtn = document.getElementById("dark-btn");
+
+        darkBtn.onclick = function () {
+            darkBtn.classList.toggle("dark-btn-on");
+            document.body.classList.toggle("dark-theme");
+            if (localStorage.getItem("theme" == "light")) {
+                localStorage.setItem("theme", "dark")
+            } else {
+                localStorage.setItem("theme", "light")
+            }
+        }
+        if (localStorage.getItem("theme" == "light")) {
+            darkBtn.classList.remove("dark-btn-on");
+            document.body.classList.remove("dark-theme");
+        } else if (localStorage.getItem("theme" == "dark"))
+            darkBtn.classList.add("dark-btn-on");
+        document.body.classList.add("dark-theme");
+        else {
+            localStorage.setItem("theme", "light")
+        }
+
+        /*************Dark-theme Ends JS***************/
+    </script>
+
+</body>
+
+</html>

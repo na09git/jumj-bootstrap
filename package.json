@@ -25,6 +25,7 @@
     "watch": "watch 'npm run build' ./directory-you-want-to-track"
   },
   "dependencies": {
+    "bootstrap": "^5.3.2",
     "tailwind-rn": "^4.2.0"
   }
 }
