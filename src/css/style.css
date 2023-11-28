@@ -253,110 +253,12 @@ nav ul li {
 /*------*********Nav Ends************------*/
 
 
-/*------*********Side-bar Starts************------*/
-
-.side-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 13px 5%;
-    background: var(--bg-color);
-}
-
-.sidebar {
-    flex-basis: 100%;
-    position: sticky;
-}
-
-.sidebar-main-campus {
-    display: flex;
-    justify-content: space-between;
-    padding: 13px 5%;
-    background: var(--bg-color);
-    overflow-y: scroll;
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    align-self: flex-start;
-}
-
-.sidebar-main-campus .features {
-    margin-bottom: 10px;
-    padding-bottom: 40px;
-}
-
-.row .image img {
-    border-radius: 90%;
-    width: 400px;
-    height: 400px;
-}
 
 
 /*------*********Side-bar Ends************------*/
 
 
 /*------*********Home Ends************------*/
-
-#home {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7), url("images/back.PNG"));
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 40px;
-}
-
-#home h2 {
-    color: blueviolet;
-    font-size: 1.9rem;
-    line-height: 25px;
-}
-
-#home p {
-    width: 60%;
-    color: blueviolet;
-    font-size: 1.9rem;
-    line-height: 25px;
-    margin-top: 1rem;
-    ;
-}
-
-#home .btn {
-    margin-top: 30px;
-}
-
-#home a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 13px 35px;
-    background-color: rgb(11, 10, 10);
-    font-weight: 600;
-    border-radius: 5px;
-}
-
-#home a.blue {
-    color: #fffffd;
-    background: rgba(21, 21, 100);
-    transition: 0.3s ease;
-}
-
-#home a.blue:hover {
-    color: rgba(21, 21, 100);
-    background: #fff;
-}
-
-#home a.yellow {
-    color: #fffffd;
-    background: #FDC938;
-}
-
-#home a.yellow:hover {
-    color: rgba(21, 21, 100);
-    background: #fff;
-}
 
 
 /*----------------Feateres of jumj starts--------*/
