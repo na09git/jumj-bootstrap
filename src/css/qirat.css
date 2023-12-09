@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+
+    font-size: 15px;
+
+    /* Primary */
+    --var-soft-blue: hsl(215, 51%, 70%);
+    --var-cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --var-main-darkest: hsl(217, 54%, 11%);
+    --var-card-dark: hsl(216, 50%, 16%);
+    --var-line-dark: hsl(215, 32%, 27%);
+    --var-lightest: white;
+
+    /* Fonts */
+
+    --var-heading: normal normal 600 1.5em/1.6em 'Outfit', sans-serif;
+
+    --var-small-heading: normal normal 400 1em/1em 'Outfit', sans-serif;
+
+    --var-para: normal normal 300 1em/1.55em 'Outfit', sans-serif;
+}
+
+/* 
+=======================
+Setup
+=======================
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    background-color: var(--var-main-darkest);
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+/* 
+
+Eye view
+
+https://i.postimg.cc/9MtT4GZY/view.png' border='0' alt='view */
+
+/*
+=========================
+Font Styling
+=========================
+*/
+
+h1 {
+    font: var(--var-heading);
+    color: var(--var-lightest);
+    padding: 1.2em 0;
+}
+
+h2 {
+    font: var(--var-small-heading);
+    color: var(--var-lightest);
+    /* padding on .coin-base */
+}
+
+p {
+    font: var(--var-para);
+    color: var(--var-soft-blue);
+}
+
+span {
+    color: white;
+}
+
+/* 
+=====================
+Classes
+=====================
+*/
+
+/* LAYOUT */
+
+.card-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 2em auto;
+    background-color: var(--var-card-dark);
+    border-radius: 15px;
+    margin-bottom: 0.7rem;
+    padding: 1.5rem;
+}
+
+div.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.coin-base,
+.time-left,
+.card-attribute {
+    display: flex;
+    align-items: center;
+    padding: 0.7em 0;
+}
+
+.card-attribute {
+    padding-bottom: 1.2em;
+    border-top: 2px solid var(--var-line-dark);
+}
+
+a.hero-image-container {
+    position: relative;
+    display: block;
+}
+
+@media (min-width:400px) {
+    img.eye {
+        max-width: 3em;
+    }
+}
+
+.hero-image-container:hover::after {
+    opacity: 1;
+}
+
+.small-image {
+    width: 1em;
+    margin-right: .4em;
+}
+
+.small-avatar {
+    width: 1em;
+    border-radius: 120px;
+    outline: 2px solid white;
+    margin-right: 1.2em;
+}
+
+div.attribution {
+    margin: 0 auto;
+    width: 80%;
+    font: var(--var-para);
+    text-align: center;
+    padding: 1.5em 0 4em 0;
+    color: var(--var-line-dark);
+}
+
+.attribution a {
+    color: var(--var-soft-blue);
+}
+
+@media (min-width:600px) {
+    body {
+        font-size: 18px;
+    }
+}

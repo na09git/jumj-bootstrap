@@ -4,7 +4,7 @@
      justify-content: space-between;
      padding: 13px 5%;
      background: var(--bg-color);
-     overflow-y: scroll;
+     overflow-y: auto;
      align-self: flex-start;
  }
 

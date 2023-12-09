@@ -150,6 +150,7 @@ form.sign-in-form {
 .btn:hover {
   background-color: #4d84e2;
 }
+
 .panels-container {
   position: absolute;
   height: 100%;
@@ -175,7 +176,8 @@ form.sign-in-form {
 }
 
 .image {
-  width: 100%;
+  width: 30%;
+  border-radius: 10%;
   transition: transform 1.1s ease-in-out;
   transition-delay: 0.4s;
 }
@@ -275,6 +277,7 @@ form.sign-in-form {
     min-height: 800px;
     height: 100vh;
   }
+
   .signin-signup {
     width: 100%;
     top: 95%;
@@ -381,9 +384,11 @@ form.sign-in-form {
   .image {
     display: none;
   }
+
   .panel .content {
     padding: 0.5rem 1rem;
   }
+
   .container {
     padding: 1.5rem;
   }
