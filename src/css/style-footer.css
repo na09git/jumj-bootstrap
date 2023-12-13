@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;1,700&display=swap');
-@import '~bootstrap/dist/css/bootstrap.min.css';
 
 
 /*********footer*******************/
@@ -194,7 +193,6 @@ ol li {
 
 .kilimanjaro_works>a {
     display: inline-block;
-    float: left;
     position: relative;
     width: 33.33333333%;
     z-index: 1;
@@ -260,6 +258,12 @@ ol li {
     font-size: 13px;
     margin-bottom: 5px;
     padding-bottom: 10px;
+}
+
+.kilimanjaro_works_img img {
+    width: 70px;
+    height: 70px;
+
 }
 
 /* Credit to https://bootsnipp.com/snippets/X2XOv */

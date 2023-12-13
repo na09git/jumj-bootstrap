@@ -7,11 +7,19 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title> JUMJ Website </title>
 
-    <!----------JQuery------>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!--JQuery--->
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
 </head>
 
-<body>
+<body class="p-1">
     <style>
         /** 1 **/
         .header_load {
@@ -48,7 +56,7 @@
 
         /** 8 **/
         .information_load {
-            position: fixed;
+            position: relative;
         }
 
 
@@ -59,7 +67,8 @@
 
         /** 10 **/
         .testimonial_load {
-            position: absolute;
+            position: relative;
+            padding-top: 530px;
         }
 
         /** 11 **/
@@ -81,62 +90,61 @@
         <!----------------------Navbar Header Ends -------------------->
 
 
-        <!------- 3 ------>
+        <!------- 2 ------>
 
         <!---**********Side-bar starts************ ----->
         <div class="welcomejumj_load"></div>
         <!---**********Side-bar ENds************ ----->
 
 
-
-        <!------- 4 ------>
+        <!------- 3 ------>
         <!------------Features of Jumj Starts-->
         <div class="features_load"></div>
         <!------------Features of Jumj Ends-->
 
-        <!------- 5 ------>
+        <!------- 4 ------>
         <!-------- Qirat_Given Starts---------- -->
         <div class="qirat_given_load"></div>
         <!-------- Qirat_Given Ends ---------- -->
 
 
 
-        <!------- 6 ------>
+        <!------- 5 ------>
         <!-------------- Question Starts ---------->
         <div class="question_load"></div>
         <!-------------- Question Asked Ends -------->
 
 
-        <!------- 7 ------>
+        <!------- 6 ------>
         <!----------   Tuitorial  Starts ------------>
         <div class="tuitorial_load"></div>
         <!-------------- Question Asked Ends --------->
 
 
 
-        <!------- 8 ------>
+        <!------- 7 ------>
         <!---------information Starts  ------>
         <div class="information_load"></div>
         <!------********* information Ends************------>
 
-        <!------- 9 ------>
+        <!------- 8 ------>
         <!-------------- works_load Starts ---------------------->
         <div class="works_load"></div>
         <!-------------- Testimonial_load Ends ---------------------->
 
-        <!------- 10 ------>
+        <!------- 9 ------>
         <!-------------- Testimonial_load Starts ---------------------->
         <div class="testimonial_load"></div>
         <!-------------- Testimonial_load Ends ---------------------->
 
 
-        <!------- 11 ------>
+        <!------- 10 ------>
         <!-- Sign Up For Our Newsletter Starts -->
         <div class="sign_load"></div>
         <!-- Sign Up For Our Newsletter Starts-->
 
 
-        <!------- 12 ------>
+        <!------- 11 ------>
         <!------------- footer  Starts ------->
         <div class="footer_load"></div>
         <!------------- Footer   Ends --------->
@@ -154,61 +162,53 @@
     /*---------- - 1 -- Header load--------*/
 
     $(function () {
-        $('.header_load').load('pages/header.html');
+        $('.header_load').load('pages/header.hbs');
     });
 
-    /*---------- 2 -- Carousel load--------*/
+
+    /*---------- 2 -- jumjwelcome load--------*/
     $(function () {
-        $('.carousel_load').load('pages/carousel.html');
+        $('.welcomejumj_load').load('pages/welcomejumj.hbs');
+    });
+    /*---------- 3 -- features_load load--------*/
+    $(function () {
+        $('.features_load').load('pages/features.hbs');
     });
 
-    /*---------- 3 -- jumjwelcome load--------*/
+    /*---------- 4 -- Qirat_Given load--------*/
     $(function () {
-        $('.welcomejumj_load').load('pages/welcomejumj.html');
-    });
-    /*---------- 4 -- features_load load--------*/
-    $(function () {
-        $('.features_load').load('pages/features.html');
+        $('.qirat_given_load').load('pages/qirat-given.hbs');
     });
 
-    /*---------- 5 -- Qirat_Given load--------*/
+    /*---------- 5 -- Tuitorial_load load--------*/
     $(function () {
-        $('.qirat_given_load').load('pages/qirat-given.html');
+        $('.tuitorial_load').load('pages/tuitorial.hbs');
     });
 
-    /*---------- 6 -- Tuitorial_load load--------*/
+    /*---------- 6 -- QuestionAsked load--------*/
     $(function () {
-        $('.tuitorial_load').load('pages/tuitorial.html');
+        $('.question_load').load('pages/question-asked.hbs');
     });
 
-    /*---------- 7 -- QuestionAsked load--------*/
+    /*---------- 7 -- information load--------*/
     $(function () {
-        $('.question_load').load('pages/question-asked.html');
+        $('.information_load').load('pages/informationcard.hbs');
     });
 
-    /*---------- 8 -- information load--------*/
+    /*---------- 8 -- works load--------*/
     $(function () {
-        $('.information_load').load('pages/informationcard.html');
+        $('.works_load').load('pages/works.hbs');
     });
 
-    /*---------- 9 -- works load--------*/
+    /*---------- 9 -- Testimonial load--------*/
     $(function () {
-        $('.works_load').load('pages/works.html');
+        $('.testimonial_load').load('pages/testimonial.hbs');
     });
 
-    /*---------- 10 -- Testimonial load--------*/
-    $(function () {
-        $('.testimonial_load').load('pages/testimonial.html');
-    });
 
-    /*---------- 11 -- sign_load load--------*/
+    /*--------- 10 -- footer load--------*/
     $(function () {
-        $('.sign_load').load('pages/signup.html');
-    });
-
-    /*--------- 12 -- footer load--------*/
-    $(function () {
-        $('.footer_load').load('pages/footer.html');
+        $('.footer_load').load('./pages/footer.hbs');
     });
 
 </script>

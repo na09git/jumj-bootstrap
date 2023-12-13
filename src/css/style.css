@@ -4,7 +4,6 @@
 :root {
     --body-color: #efefef;
     --blue: rgb(94, 111, 204);
-    --nav-color: #1876f2;
     --bg-color: #fff;
 }
 
@@ -26,66 +25,13 @@ html {
 }
 
 section {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 
 /****----nav Starts--******/
 
-/***********Heade starts***************/
-/***********Heade starts***************/
 
-.container-fluid {
-    position: sticky;
-    top: 100;
-    z-index: 99;
-
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.fa-angle-right {
-    float: right;
-}
-
-.no {
-    list-style-type: none;
-    padding-left: 6px;
-}
-
-.loginbtn {
-    background-color: #fff;
-    padding-right: 3px;
-    padding: 7px 17px;
-    border-radius: 20px;
-    color: #101C32;
-    transition: 0.4s ease-in-out;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    border-radius: 5px;
-    border: 1px solid red;
-}
-
-a {
-    text-decoration: none;
-
-}
-
-.loginbtn:hover {
-
-    color: #fff;
-    background: rgb(248, 47, 47);
-    transition: 0.3s ease;
-}
-
-
-/************Header ends**********/
-/************Header ends**********/
-/************Header ends**********/
 .nav {
     height: 50%;
     background: var(--nav-color);
@@ -998,7 +944,7 @@ ul {
     font-size: 13px;
 }
 
-top-15 {
+.top-15 {
     margin-top: 15px;
 }
 
