@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
-mongoose.connect("mongodb+srv://na0908nna:nbvhgyt09mongodb@cluster0.hwpaydx.mongodb.net/jumj_login?retryWrites=true&w=majority")
-
+// mongoose.connect("mongodb+srv://na0908nna:nbvhgyt09mongodb@cluster0.hwpaydx.mongodb.net/jumj_login?retryWrites=true&w=majority")
+mongoose.connect("mongodb://localhost:27017/new_db")
     .then(() => {
         console.log('mongoose connected Successfully!')
     })

@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title> JUMJ Website </title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,6 +26,7 @@
 </head>
 
 <body class="p-1">
+    <!--------Style Starts----->
     <style>
         /** 1 **/
         .header_load {
@@ -84,6 +91,9 @@
 
 
     <div>
+        <header>
+            {{> header}}
+        </header>
         <!------- 1 ------>
         <!-------------Header Navbar starts ------>
         <div class="header_load "></div>
@@ -116,8 +126,8 @@
 
 
         <!------- 6 ------>
-        <!----------   Tuitorial  Starts ------------>
-        <div class="tuitorial_load"></div>
+        <!----------   tutorial  Starts ------------>
+        <div class="tutorial_load"></div>
         <!-------------- Question Asked Ends --------->
 
 
@@ -159,11 +169,11 @@
 <!----------Script Html load Starts-------->
 <script type="text/javascript">
 
+
+
     /*---------- - 1 -- Header load--------*/
 
-    $(function () {
-        $('.header_load').load('pages/header.hbs');
-    });
+    $('#header_load').load('./pages/header.handlebars');
 
 
     /*---------- 2 -- jumjwelcome load--------*/
@@ -180,9 +190,9 @@
         $('.qirat_given_load').load('pages/qirat-given.hbs');
     });
 
-    /*---------- 5 -- Tuitorial_load load--------*/
+    /*---------- 5 -- tutorial_load load--------*/
     $(function () {
-        $('.tuitorial_load').load('pages/tuitorial.hbs');
+        $('.tutorial_load').load('pages/tuitorial.hbs');
     });
 
     /*---------- 6 -- QuestionAsked load--------*/
