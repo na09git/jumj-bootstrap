@@ -19,150 +19,264 @@
 
 </head>
 
-<body class="p-2 ">
+<body>
     <!----Testimonial  Starts--->
-
     <style>
-        .gradient-custom {
-            background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
-                linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
-                linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
-                radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
-                radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
-            background-blend-mode: screen, color-dodge, overlay, difference, normal;
+        body {
+            background-color: #4A148C
         }
 
-        .testimonial-card .card-up {
-            height: 90px;
-            border-top-left-radius: 0.25rem;
-            border-top-right-radius: 0.25rem;
+
+        @media (max-width:991.98px) {
+            .padding {
+                padding: 1.5rem
+            }
         }
 
-        .testimonial-card .avatar {
-            height: 110px;
-            width: 260px;
-            width: 90px;
-            border: 3px solid #fff;
-            border-radius: 50%;
+        @media (max-width:767.98px) {
+            .padding {
+                padding: 1rem
+            }
+        }
+
+        .padding {
+            padding: 5rem
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            width: 600px;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid #d2d2dc;
+            border-radius: 11px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+            box-shadow: 0px 0px 5px 0px rgb(161, 163, 164);
+        }
+
+        .card .card-body {
+            padding: 1rem 1rem;
+        }
+
+        .card-body {
+            flex: 1 1 auto;
+            padding: 1.25rem
+        }
+
+        p {
+            font-size: 0.875rem;
+            margin-bottom: .5rem;
+            line-height: 1.5rem
+        }
+
+        h4 {
+            line-height: .2 !important;
+        }
+
+
+        .items {
+            width: 90%;
+            margin: 0px auto;
+            margin-top: 100px
+        }
+
+        .slick-slide {
+            margin: 10px
+        }
+
+
+        .media iframe,
+        .media-content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 0;
+            border-radius: inherit;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-color: rgba(120, 120, 120, .1);
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        .media-content:before {
+            content: '';
+            position: absolute;
+            height: 10%;
+            width: 90%;
+            left: 5%;
+            bottom: 0;
+            background: inherit;
+            background-position-y: 100%;
+            filter: blur(10px)
+        }
+
+        .circle .media-content:before {
+            width: 40%;
+            left: 30%
+        }
+
+
+        .profile-image {
+            width: 100%;
+            height: 200px;
+            border-top-left-radius: 11px !important;
+            border-top-right-radius: 11px;
+        }
+
+        .card-title {
+            font-size: 19px;
+            font-weight: 200;
         }
     </style>
 
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <div class="items">
 
-    <section class="gradient-custom p-2 pb-5">
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-10 col-xl-8 text-center">
-                <h3 class="mb-4">Jumj Families About : ~ Jumj</h3>
-                <p class="mb-4 pb-2 mb-md-5 pb-md-0">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-                    numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
-                    quisquam eum porro a pariatur veniam.
-                </p>
+
+        <div class="card">
+            <div class="media media-2x1 gd-primary">
+
+                <img class="profile-image"
+                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1568709978/BBBootstrap/2.jpg">
+
+
             </div>
-        </div>
-        <div class="row text-center d-flex align-items-stretch">
-
-            <!-----  1  -->
-
-            <div class="col-md-3 mb-4 mb-md-0 d-flex align-items-stretch">
-                <div class="card testimonial-card">
-                    <div class="card-up" style="background-color: #9d789b;"></div>
-                    <div class="avatar mx-auto bg-white">
-                        <img src="../images/albany.png" class="rounded-circle img-fluid" />
-                    </div>
-                    <div class="card-body">
-                        <h4 class="mb-4">Ahmedin Yunus</h4>
-                        <h5 class="mb-4">Electrical Enginer</h5>
-                        <h6 class="mb-4">Former kjumj Amir</h6>
-                        <hr />
-                        <p class="dark-grey-text mt-4">
-                            <i class="fas fa-quote-left pe-2"></i>
-                            JUMJ is one of the most popular university jama'a in ethiopia and its also among the
-                            oldest and it has long history ,and had done great works and doing now for the musli
-                            umma and the country as whole
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-----  2  -->
-
-            <div class="col-md-3 mb-5 mb-md-0 d-flex align-items-stretch">
-                <div class="card testimonial-card">
-                    <div class="card-up" style="background-color: #9d789b;"></div>
-                    <div class="avatar mx-auto bg-white">
-                        <img src="../images/hunde.jpg" class="rounded-circle img-fluid width=80" width="90"
-                            height="90" />
-                    </div>
-                    <div class="card-body">
-                        <h4 class="mb-4">Dr. Hunde Ali</h4>
-                        <h5 class="mb-4">Medical Doctor and Child Speacialist</h5>
-                        <h6 class="mb-4">Former JUMJ Amir</h6>
-                        <hr />
-                        <p class="dark-grey-text mt-4">
-                            <i class="fas fa-quote-left pe-2"></i>
-                            JUMJ is one of the most popular university jama'a in ethiopia and its also among the
-                            oldest and it has long history ,and had done great works and doing now for the musli
-                            umma and the country as whole
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-----  3  -->
-
-            <div class="col-md-3 mb-5 mb-md-0 d-flex align-items-stretch">
-                <div class="card testimonial-card">
-                    <div class="card-up" style="background-color: #7a81a8;"></div>
-                    <div class="avatar mx-auto bg-white">
-                        <img src="../images/sh-shafi.jpg" class="rounded-circle img-fluid" />
-                    </div>
-                    <div class="card-body">
-                        <h4 class="mb-4">Sheikh Shafi Mohammed</h4>
-                        <h5 class="mb-4">Ustaz In JUMJ </h5>
-
-                        <h6 class="mb-4">Lecture In Jimma University</h6>
-
-                        <hr />
-                        <p class="dark-grey-text mt-4">
-                            <i class="fas fa-quote-left pe-2"></i>
-                            JUMJ is one of the most popular university jama'a in ethiopia and its also among the
-                            oldest and it has long history ,and had done great works and doing now for the musli
-                            umma and the country as whole
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-----  4  -->
-
-            <div class="col-md-3 mb-0 d-flex align-items-stretch">
-                <div class="card testimonial-card">
-                    <div class="card-up" style="background-color: #6d5b98;"></div>
-                    <div class="avatar mx-auto bg-white">
-                        <img src="../images/nesrellah.jpg" class="rounded-circle img-fluid" />
-                    </div>
-                    <div class="card-body">
-                        <h4 class="mb-4">Nesrellah </h4>
-                        <h5 class="mb-4">Medical Doctor</h5>
-                        <h6 class="mb-4">Former Jumj Amir</h6>
-                        <hr />
-                        <p class="dark-grey-text mt-4">
-                            <i class="fas fa-quote-left pe-2"></i>
-                            JUMJ is one of the most popular university jama'a in ethiopia and its also among the
-                            oldest and it has long history ,and had done great works and doing now for the musli
-                            umma and the country as whole
-                        </p>
-                    </div>
-                </div>
+            <div class="card-body">
+                <h5 class="card-title">Delbert Simonas</h5>
+                <p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read
+                    about these customer review on site"</p>
             </div>
 
         </div>
-    </section>
 
+        <div class="card">
+            <div class="media media-2x1 gd-primary">
+
+                <img class="profile-image"
+                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-3.jpg">
+
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Tikoh Amin</h5>
+                <p class="card-text">"When you think of Apple you automatically think expensive if your anything like
+                    me. When purchasing this laptop I was skeptical."</p>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="media media-2x1 gd-primary">
+
+                <img class="profile-image"
+                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-2.jpg">
+
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Malachi Lensing</h5>
+                <p class="card-text">"I&rsquo;ve wanted a MacBook for a while now because of the build quality and the
+                    simplicity of the OS. I spend an average 6 hours a day."</p>
+            </div>
+
+        </div>
+
+
+        <div class="card">
+            <div class="media media-2x1 gd-primary">
+
+                <img class="profile-image"
+                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869126/BBBootstrap/img-1.jpg">
+
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Christian Isla</h5>
+                <p class="card-text">"This MacBook has excellent processing speed. The screen is crystal clear and I
+                    really enjoy the touchbar. I set it up"</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="card">
+            <div class="media media-2x1 gd-primary">
+
+                <img class="profile-image"
+                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1563294707/Profile/img-1.jpg">
+
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Lori Charles</h5>
+                <p class="card-text">"For the last 10 years, I have owned an old Gateway laptop. Although it was amazing
+                    and lasted me, it was time for an upgrade."</p>
+            </div>
+
+        </div>
+
+
+    </div>
     <!----Testimonial  Starts--->
+    <script src="script.js">
 
-    <script src="script.js"></script>
+        $(document).ready(function () {
 
+            $('.items').slick({
+                dots: true,
+                infinite: true,
+                speed: 800,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+
+                ]
+            });
+        });
+    </script>
 </body>
 
 </html>
